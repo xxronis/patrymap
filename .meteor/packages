@@ -22,3 +22,7 @@ iron:router@1.0.0
 yasinuslu:blaze-meta
 aldeed:collection2
 aldeed:autoform
+accounts-google
+accounts-facebook
+accounts-twitter
+mrt:accounts-ui-bootstrap-3
