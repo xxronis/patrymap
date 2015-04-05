@@ -1,4 +1,7 @@
-Template.home.rendered = function() {
+Mapbox.debug = true;
+Mapbox.load('markercluster', 'heat');
+
+Tracker.autorun(function () {
     if (Mapbox.loaded()) {
         L.mapbox.accessToken = 'pk.eyJ1IjoieHhyb25pcyIsImEiOiJscVFVNHdvIn0.H0b4euqdDzJTOz2lpwxe6Q';
         var map = L.mapbox.map('map', 'xxronis.ll27iaib');
@@ -11,7 +14,4 @@ Template.home.rendered = function() {
         // Disable tap handler, if present.
         if (map.tap) map.tap.disable();
     }
-};
-Template.home.helpers({
-    html: '<div id="map"></div>'
 });
