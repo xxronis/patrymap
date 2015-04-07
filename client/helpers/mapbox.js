@@ -4,7 +4,7 @@ Mapbox.load('markercluster', 'heat');
 Tracker.autorun(function () {
     if (Mapbox.loaded()) {
         L.mapbox.accessToken = 'pk.eyJ1IjoieHhyb25pcyIsImEiOiJscVFVNHdvIn0.H0b4euqdDzJTOz2lpwxe6Q';
-        var map = L.mapbox.map('map', 'xxronis.ll27iaib');//.setView([-104.99404, 39.75621], 2);
+        var map = L.mapbox.map('map', 'xxronis.ll27iaib', { zoomControl: false });//.setView([-104.99404, 39.75621], 2);
         // Disable drag and zoom handlers.
         //map.dragging.disable();
         map.touchZoom.disable();
@@ -38,5 +38,6 @@ Tracker.autorun(function () {
             onEachFeature: onEachFeature
         }).addTo(map);
         //map.setView([-104.99404, 39.75621], 18);
+        new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
     }
 });
