@@ -1,9 +1,9 @@
 DashboardController = AppController.extend({
   waitOn: function() {
-    return this.subscribe('items');
+    return this.subscribe('geoevents');
   },
   data: {
-    items: Items.find({})
+    geoevents: GeoEvents.find({})
   },
   onAfterAction: function () {
     Meta.setTitle('Dashboard');

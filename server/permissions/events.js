@@ -1,4 +1,4 @@
-Items.allow({
+GeoEvents.allow({
   'insert': function(userId, doc) {
     return userId;
   },

@@ -1,7 +1,7 @@
-Meteor.publishComposite("items", function() {
+Meteor.publishComposite("geoevents", function() {
   return {
     find: function() {
-      return Items.find({});
+      return GeoEvents.find({});
     }
     // ,
     // children: [

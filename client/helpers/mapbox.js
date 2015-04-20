@@ -33,7 +33,7 @@ Tracker.autorun(function () {
 
 
         function showMap(err, data) {
-            console.log(data)
+            //console.log(data)
             // The geocoder can return an area, like a city, or a
             // point, like an address. Here we handle both cases,
             // by fitting the map bounds to an area or zooming to a point.
