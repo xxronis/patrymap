@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "geojson-random": {
+      "version": "0.2.2"
+    }
+  }
+}
